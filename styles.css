@@ -1,8 +1,9 @@
 :root{
     --green: #4ade80;
     --secondary: #DE4AA8;
-    --grey: #cbd5e1;
+    --grey: #E2E8F0;
     --white: #f8fafc;
+    --shadow: #919191
 }
 
 *{
@@ -30,7 +31,7 @@
     grid-template-rows: 75px 5fr 6fr;
     gap: 30px;
     z-index: 3;
-    box-shadow: 1px 0px 5px 0px #919191;
+    box-shadow: 1px 0px 5px 0px var(--shadow);
 }
 
 .logo{
@@ -93,7 +94,7 @@
     grid-template-columns: 3fr 2fr;
     grid-template-rows: repeat(2, 1fr);
     z-index: 2;
-    box-shadow: 1px 0px 5px 0px #919191;
+    box-shadow: 1px 0px 5px 0px var(--shadow);
 }
 
 .bar{
@@ -212,7 +213,7 @@
 /* Main */
 
 .main{
-    background-color: green;
+    background-color: var(--grey);
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
@@ -221,11 +222,58 @@
     z-index: 1;
 }
 
-.projects{
-    background-color: orange;
+.project-section{
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
+
+.project-section h3{
+    padding: 0 12px;
+}
+
+.project-display{
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: unset;
+    grid-auto-rows: 30%;
+    gap: 16px;
+    overflow: scroll;
+    padding: 0 12px;
+}
+
+.project{
+    background-color: var(--white);
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 1px 2px 5px 0px var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-left: solid 6px var(--secondary);
+}
+
+.project .description p{
+    color: gray;
+    font-size: small;
+}
+
+.options{
+    display: flex;
+    justify-content: end;
+    gap: 10%;
+}
+
+.options svg{
+    width: 24px;
+    height: 24px;
+}
+
 
 .announce{
     background-color: aquamarine;
