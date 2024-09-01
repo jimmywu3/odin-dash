@@ -157,17 +157,40 @@
 }
 
 .user .profile img{
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
     background-color: var(--secondary);
 }
 
 .greet{
-    background-color: bisque;
+    padding: 0px 32px;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
 }
+
+.greet img{
+    border-radius: 100%;
+    background-color: var(--secondary);
+    width: 50px;
+    height: 50px;
+}
+
+.greet .greet-user{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.greet p{
+    font-weight: bolder;
+    font-size: small;
+}
+
 
 .buttons{
     background-color: aqua;
