@@ -132,9 +132,35 @@
 }
 
 .user{
-    background-color: grey;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+.user .notif{
+    width: 24px;
+    height: 24px;
+}
+
+.user a{
+    color: black;
+    text-decoration: none;
+}
+
+.user .profile{
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.user .profile img{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: var(--secondary);
 }
 
 .greet{
