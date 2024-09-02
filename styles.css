@@ -236,7 +236,7 @@
 }
 
 .project-display{
-    height: 450px;
+    height: 495px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: unset;
@@ -278,7 +278,7 @@
 .announce{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    padding: 24px 24px 24px 0;
+    padding: 24px 24px 0 0;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -291,6 +291,7 @@
     gap: 16px;
     padding: 24px;
     border-radius: 6px;
+    box-shadow: 1px 2px 5px 0px var(--shadow);
 }
 
 .announcements a{
@@ -314,10 +315,45 @@
 }
 
 .trend{
-    background-color: royalblue;
     grid-column: 2 / 3;
     grid-row: 2 /3;
+    padding: 0 24px 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
+
+.trend .people{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 6px;
+    box-shadow: 1px 2px 5px 0px var(--shadow);  
+}
+
+.people a{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: black;
+    text-decoration: none;  
+}
+
+.people img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: var(--secondary);
+}
+
+.people p{
+    font-size: small;
+    color: gray;
+}
+
+
 
 
 
